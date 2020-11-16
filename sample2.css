@@ -1,35 +1,28 @@
-html{
+body{
     background: #241414 0% 0% no-repeat padding-box;
     font-family:  'Segoe UI', 'Open Sans';
-    top: 0px;
-    left: 0px;
-    max-width: 1920px;
-    max-height: 1080px;
-    overflow: hidden;
-    /*overflow-x: scroll;*/
 }
-
 *, *:before, *after{
     box-sizing: inherit;
 }
-.main{
-    box-sizing: content-box;
-    width: 500px;
-    margin: 50px auto;
+
+.page-wrapper{
+    display: grid;
+    grid-template-rows: 150px 1fr 150px;
+}
+.login-box{
+    grid-column: 5/ span 4;
+    grid-row-start: 2;
+    max-width: 500px;
 }
 .header_wrapper{
     background: #FEFEA4 0% 0% no-repeat padding-box;
-    opacity: 1;
-    width: 500px;
-    height: 130px;
+    box-sizing: border-box;
     text-align: center;
-    padding-top: 10px;
+    padding: 10px 0px;
 }
 .logo{
-    width: 100px;
     height: 105px;
-    background: transparent url('img/logo-wide.png') 0% 0% no-repeat padding-box;
-    opacity: 1;
 }
 .company{
     font-family: 'Open Sans';
@@ -43,17 +36,12 @@ html{
     vertical-align: top;
 }
 .form_wrapper{
-    top: 371px;
-    left: 643px;
-    width: 498px;
+    font-family: 'Open Sans';
     height: 400px;
     background: #151514 0% 0% no-repeat padding-box;
     border: 1px solid #FEFEA4;
-    opacity: 1;
     text-align: center;
     color: white;
-}
-.form_wrapper p{
     font-size: 15px;
 }
 .form_wrapper a{
@@ -62,17 +50,14 @@ html{
 }
 ::placeholder{
     color: white;
-    opacity: 1;
 }
 legend{
-    font-family: 'Open Sans';
     font-size: 20px;
     font-weight: 300;
     color: white;
     padding: 25px;
 }
 .username, .password{
-    box-sizing: border-box;
     border: none;
     border-bottom: 1px solid darkgray;
     background: none;
@@ -82,19 +67,21 @@ legend{
     font-family: 'Segoe UI';
     font-size: 15px;
 }
-[type="text"]{
+.username:focus,
+.username:active,
+.password:focus,
+.password:active{
+    outline: none;
+}
+[type="text"],[type="password"]{
     color: white;
 }
 .login{
-    box-sizing: border-box;
     border: none;
-    top: 710px;
-    left: 834px;
     width: 215px;
     height: 50px;
     color: white;
     background: #D3504A;
-    opacity: 1;
     font-family: 'Segoe UI';
     font-size: 15px;
     margin: 25px;

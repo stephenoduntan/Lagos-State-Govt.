@@ -8,14 +8,15 @@
         <link rel="stylesheet" href="sample21.css">
     </head>
     <body>
-        <div class="page_wrapper">
-            <aside role="banner" class="aside">
+        <main class="page_wrapper">
+            <section role="banner" class="aside">
                 <div class="company">
                     <a href="login.htm" class="logo"><img src="lasg.png" alt="LASG" class="logo"></a>
                     <p class="logo_text">Pension Management System</p>
                 </div>
-                <div class="nav">
-                    <nav>
+
+                <nav class="nav">
+                    <div>
                         <a href="dash.htm">DASHBOARD</a>
                         <a href="#">PENSIONER PROFILE</a>
                         <a href="#">ARCHIVE RECORDS</a>
@@ -24,51 +25,55 @@
                         <a href="#">PAYMENTS</a>
                         <a href="#">REPORTING</a>
                         <a href="#">PENSION CALCULATOR</a>
-                        <div>
-                            <a href="#">SETTINGS</a>
-                            <a href="login.htm">LOGOUT</a>     
-                        </div>
-                    </nav>
-                </div>
-                <footer>Copyright 2017, Lagos State Government</footer>
-            </aside>
-            <main class="main">
+                    </div>
+                    <div class="bottom">
+                        <a href="#">SETTINGS</a>
+                        <a href="login.htm">LOGOUT</a>     
+                    </div>
+                </nav>
+
+                <div class="footer">Copyright 2017, Lagos State Government</div>
+            </section>
+
+            <section class="main">
                 <header class="header">
                     <div class="dash">
-                        <p><i class="fas fa-bars"></i> DASHBOARD</p>
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="fa-bars"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
+                            DASHBOARD
+                        </p>
                     </div>
                     <div class="name">
                         <img src="mash.jpg" alt="Profile Photo">
                         <p><strong>DANIEL WILLIAMS</strong><br><em>Super Administrator</em></p>
                     </div>
                 </header>
-                <section class="section">
-                    <div class="left">
-                        <div>
-                            <p><strong>8,967</strong><br>Pensioner Profiles</p>
-                        </div>
-                        <div>
-                            <p><strong>3,298</strong><br>Registered Pensioners This Year</p>
-                        </div> 
-                        <div>
-                            <p><strong>2,365,176.00</strong><br>Paid Out This Month - November 2017</p>
-                        </div> 
+                
+                <article class="section">
+                    
+                    <div>
+                        <p><strong>8,967</strong><br>Pensioner Profiles</p>
                     </div>
-                    <div class="right">
-                        <div>
-                            <p><strong>4,398</strong><br>Verified Pensioners This Year</p>
-                        </div>    
-                           
-                        <div>
-                            <p><strong>1,990</strong><br>Pensioners Paid This Year</p>
-                        </div>    
-                           
-                        <div>
-                            <p><strong>54,892,896.00</strong><br>Paid Out This Year - 2017</p>
-                        </div>           
-                    </div>  
-                </section>
-            </main>
-        </div>   
+                    <div>
+                        <p><strong>3,298</strong><br>Registered Pensioners This Year</p>
+                    </div> 
+                    <div>
+                        <p><strong>2,365,176.00</strong><br>Paid Out This Month - November 2017</p>
+                    </div> 
+                    <div>
+                        <p><strong>4,398</strong><br>Verified Pensioners This Year</p>
+                    </div>    
+                        
+                    <div>
+                        <p><strong>1,990</strong><br>Pensioners Paid This Year</p>
+                    </div>    
+                        
+                    <div>
+                        <p><strong>54,892,896.00</strong><br>Paid Out This Year - 2017</p>
+                    </div>           
+                     
+                </article>
+            </section>
+        </main>   
     </body>
 </html>
